@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.coursecreation.web.COurseController&apos; to &apos;CourseController&apos;&#x0D;&#x0A;- Original project: &apos;CourseCreation&apos;&#x0D;&#x0A;- Original element: &apos;com.coursecreation.web.COurseController&apos;&#x0D;&#x0A;- Renamed element: &apos;com.coursecreation.web.CourseController&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;COurseController&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.coursecreation.web{COurseController.java[COurseController" matchStrategy="1" name="CourseController" qualified="false" references="true" similarDeclarations="false" stamp="1477971310677" textual="false" version="1.0"/>
+</session>
