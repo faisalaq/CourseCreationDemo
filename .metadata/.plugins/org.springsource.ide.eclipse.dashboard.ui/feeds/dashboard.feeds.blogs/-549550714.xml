@@ -5,7 +5,32 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-10-31T16:01:00Z</updated>
+  <updated>2016-11-01T08:12:29Z</updated>
+  <entry>
+    <title>This Week in Spring - November 1, 2016</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/11/01/this-week-in-spring-november-1-2016" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2016-11-01:2674</id>
+    <updated>2016-11-01T08:12:29Z</updated>
+    <content type="html">&lt;p&gt;Hello and welcome back to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! Can you believe we&amp;rsquo;re now two weeks until 2017 - time sure is flying! This week I&amp;rsquo;m in Los Angeles, California, USA, and then it&amp;rsquo;s off to London for &lt;a href="https://skillsmatter.com/conferences/7412-con-2016-the-microservices-conference"&gt;µCon 2016&lt;/a&gt;, &lt;a href="http://devoxx.be/"&gt;Devoxx Belgium&lt;/a&gt; and &lt;a href="http://oredev.org/"&gt;Oredev&lt;/a&gt;. If you&amp;rsquo;re at any of these events be sure to say hi! Now, without further ado let&amp;rsquo;s get to it!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;first, be sure to check out this &lt;a href="https://spring.io/blog/2016/10/31/webinar-replay-consumer-driven-contracts-and-your-microservice-architecture"&gt;webinar on Spring Cloud Contract by Marcin Grzejszczak&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data ninja Mark Paluch just &lt;a href="https://spring.io/blog/2016/10/28/spring-vault-and-spring-cloud-vault-1-0-0-m1-are-now-available"&gt;announced that Spring Vault and Spring Cloud Vault 1.0.0.M1 are now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Security lead &lt;a href="https://spring.io/blog/2016/10/27/spring-security-4-2-rc1"&gt;Rob Winch announced the release of Spring Security 4.2.0.RC1&lt;/a&gt; with &lt;a href="http://docs.spring.io/spring-security/site/docs/4.2.x/reference/htmlsingle/#new"&gt;lots of new features&lt;/a&gt; and updates.&lt;/li&gt;
+  &lt;li&gt;In last week&amp;rsquo;s &amp;ldquo;Spring Tips&amp;rdquo; installment I looked at circuit breakers in Spring, &lt;a href="https://spring.io/blog/2016/10/27/spring-tips-circuit-breakers"&gt;including the Hystrix circuit breaker and the new circuit breaker functionality in Spring Retry&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;related, Spring Cloud team member Ryan Baxter shared new &lt;a href="https://github.com/spring-cloud/spring-cloud-commons/blob/master/docs/src/main/asciidoc/spring-cloud-commons.adoc#retrying-failed-requests"&gt;support for retrying Ribbon-loadbalanced requests&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Pipelines lead Marcin Grzejszczak just &lt;a href="https://spring.io/blog/2016/10/26/spring-cloud-pipelines-1-0-0-m2-released"&gt;announced Spring Cloud Pipelines M2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Security and Spring Security LDAP 2.2.0 lead &lt;a href="https://spring.io/blog/2016/10/25/spring-ldap-2-2-0-released"&gt;Rob Winch just announced Spring LDAP 2.2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;check out this post on &lt;a href="http://engineering.pivotal.io/post/spring-cloud-data-flow-sink/"&gt;the Pivotal engineering blog on building Spring Cloud Data Flow sinks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;the Cloud Foundry foundation is helping to &lt;a href="http://thenewstack.io/cloud-foundrys-service-broker-api-role-in-kubernetes-and-open-source-platforms/"&gt;standardize the service broker model from Cloud Foundry to make it work for Kubernetes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;our pal &lt;a href="http://twitter.com/making"&gt;@making&lt;/a&gt; has put together a &lt;a href="https://github.com/making/cf-task-flyway-migration"&gt;useful one-off task for Concourse CI to run a Flyway database migration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/grails/grails-core"&gt;Grails Framework 3.2.2, based on Spring Boot, is now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I really enjoyed this handy, printable ZeroTurnaround cheat sheet &lt;a href="https://zeroturnaround.com/rebellabs/spring-framework-annotations-cheat-sheet/"&gt;detailing some of the common Spring ecosystem annotations and how they help&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Webinar Replay: Consumer Driven Contracts and Your Microservice Architecture</title>
     <link rel="alternate" href="https://spring.io/blog/2016/10/31/webinar-replay-consumer-driven-contracts-and-your-microservice-architecture" />
@@ -951,30 +976,5 @@ public class ExampleApplication implements CommandLineRunner {&#xD;
 &lt;p&gt;Look for more communications from us down the road soon.&lt;/p&gt;
 &lt;p&gt;As always, feedback is most welcomed, and you can reach out to us in &lt;a href="https://jira.spring.io/browse/SGF"&gt;JIRA&lt;/a&gt; or on &lt;a href="http://stackoverflow.com/questions/tagged/spring-data-gemfire"&gt;StackOverflow&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Thanks all!&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - October 11, 2016</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/10/11/this-week-in-spring-october-11-2016" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2016-10-11:2651</id>
-    <updated>2016-10-11T17:46:10Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&amp;rsquo;s already almost mid October and I can&amp;rsquo;t believe we&amp;rsquo;re almost in 2017! Time is sure flying quickly!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;It&amp;rsquo;s an honor that today at the JAX London event, the &lt;a href="https://twitter.com/jaxenter/status/785897525488254976"&gt;JAX community &lt;strong&gt;voted Spring Boot as most innovative contribution to the Java ecosystem&lt;/strong&gt;&lt;/a&gt;. I&amp;rsquo;m sure I speak for the whole Spring team when I say, Thank You very much!&lt;/li&gt;
-  &lt;li&gt;Martin Lippert just announced Spring Tool Suite 3.8.2 featuring smarter integration with &lt;a href="https://spring.io/blog/2016/10/07/spring-tool-suite-3-8-2-released"&gt;the Spring Initializr and updates to Eclipse Neon 1&lt;/a&gt; as well as bugfixes.&lt;/li&gt;
-  &lt;li&gt;I published the first installment of what I hope will be a recurring series of hot-take, live-coded looks at different aspects of the Spring and Pivotal ecosystem.&lt;/li&gt;
-  &lt;li&gt;Spring Cloud Data Flow ninja Eric Bottard just announced that &lt;a href="https://spring.io/blog/2016/10/06/spring-cloud-data-flow-for-cloud-foundry-1-1m1-and-1-0-1-released"&gt;Spring Cloud Data Flow for Cloud Foundry 1.1M1 and 1.0.1 have ben released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring founder and Atomist CEO Dr. Rod Johnson has a new tool called Atomist which seeks to make your project development lifecycle easier. In this post, &lt;a href="https://medium.com/the-composition/evolving-projects-using-atomist-editors-fd3b1f057c86#.xfrsbtxbn"&gt;Rod looks at how to use Atomist with Spring Boot code&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;RedMonk analyst James Governor has some interesting insights in his JAX London talk on the new world of Java, which &lt;a href="https://jaxenter.com/129566-129566.html"&gt;are summarized in this nice summary blog from JAX&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I did an interview &lt;a href="https://jaxenter.com/most-important-benefit-microservices-is-agility-129472.html"&gt;with JAXenter talking about the motivations behind microservices&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I liked this post by Biju Kunjummen on how to &lt;a href="https://dzone.com/articles/customizing"&gt;customize Spring web suppports &lt;code&gt;HttpMessageConverters&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Boom! Save the date my friends! &lt;em&gt;SpringOne Platform 2017&lt;/em&gt; will be held &lt;a href="https://springoneplatform.io/"&gt;December 4-7, 2017, at Moscone West in San Francisco&lt;/a&gt;! I, for one, can&amp;rsquo;t freaking wait!&lt;/li&gt;
-  &lt;li&gt;MyBatis is up and available on the Spring Initializr, &lt;a href="https://twitter.com/snicoll/status/785386501328760832"&gt;announced Spring ninja Stephane Nicoll&lt;/a&gt;. Enjoy!&lt;/li&gt;
-  &lt;li&gt;Cool! InfoQ has a post &lt;a href="https://www.infoq.com/news/2016/10/spring-releases-boot"&gt;on the latest Spring Boot releases&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This post on &lt;a href="http://nixmash.com/java/know-your-spring-boot-embedded-servlet-container/"&gt;Spring Boot&amp;rsquo;s embedded web containers&lt;/a&gt;, by Dave Burke, is a good read.&lt;/li&gt;
-&lt;/ul&gt;</content>
   </entry>
 </feed>
