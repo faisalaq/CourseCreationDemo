@@ -10,29 +10,33 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 @Entity
+@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="@id")
 public class Course {
 	
 	private String name;
-	private int id;
-	private Set<Lesson> lessons = new HashSet<Lesson>();
+	private Long id;
+	private Set<Section> sections = new HashSet<Section>();
 	
-	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="course")
-	public Set<Lesson> getLessons() {
-		return lessons;
+	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL, mappedBy="course")
+	public Set<Section> getSections() {
+		return sections;
 	}
 
-	public void setLessons(Set<Lesson> lessons) {
-		this.lessons = lessons;
+	public void setSections(Set<Section> sections) {
+		this.sections = sections;
 	}
 
 	@Id
 	@GeneratedValue
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

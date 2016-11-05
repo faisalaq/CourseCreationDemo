@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+	<title th:text="${'Edit course'}">Courses</title>
+</head>
+<body>
+	<h1 th:text="${'Editing course ' + {course.name}}">Editing course 1</h1>
+	
+	<div th:each="lesson : ${lessons}" th:object="${lesson}">
+		<span th:text="${'lesson #' + {lesson.id} + ' lesson title ' + {lesson.title}}"></span>
+	</div>
+	
+</body>
+</html>

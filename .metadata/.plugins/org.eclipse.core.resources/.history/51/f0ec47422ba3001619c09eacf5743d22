@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+	<title th:text="${'Edit course'}">Courses</title>
+	<title th:text="${'Course creation homepage'}">Courses</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+	<script type="text/javascript">
+	/*<![CDATA[*/
+    ...
+
+    var courseId = /*[[${course.id}]]*/ '1';
+
+    ...
+
+		$(function(){
+			$("#create-section-dialog").dialog({
+				autoOpen:false,
+				title:"Create Section",
+				buttons:{
+					"Create":function(){
+						$.ajax({
+							url:"createSection",
+							type:"post",
+							data:{"courseId": courseId, "sectionName": $("#sectionName")}
+							success:function(data){
+								console.log(data)
+							}
+							error:function(){
+								console.log("there was an error")
+							}
+						
+						});
+					},
+					Cancel:function(){
+						$("#create-section-dialog").dialog("close");	
+					}
+				},
+				close:function(){
+					$("#create-section-dialog").dialog("close");
+				}
+			});
+			$("#createSection").click(function(){
+				$("#create-section-dialog").dialog("open");
+			});
+		});
+    /*]]>*/
+	</script>	
+</head>
+<body>
+	<h1 th:text="${'Editing course ' + {course.name}}">Editing course 1</h1>
+	
+	<div th:each="lesson : ${lessons}" th:object="${lesson}">
+		<span th:text="${'lesson #' + {lesson.id} + ' lesson title ' + {lesson.title}}"></span>
+	</div>
+	
+	<div th:if="${#lists.isEmpty(lessons)}">
+		No lessons to display
+	</div>
+	
+	<div style="margin-top: 1em;">
+		<button id="createSection">Create Section</button>
+		<!-- <a th:href="'addLesson/' + ${course.id}">Add Lesson</a> -->
+	</div>
+
+	<div id="create-section-dialog">
+		<fieldset>
+			<input type="text" id="sectionName" />
+		</fieldset>
+	</div>
+
+</body>
+</html>

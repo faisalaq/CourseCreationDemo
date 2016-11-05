@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+	<title th:text="${'Course creation homepage'}">Courses</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+	<script type="text/javascript">
+		$(function(){
+			// when you are inside of this scope, it signals that jquery is fully loaded
+			$("#create-course-dialog").dialog({
+				autoOpen:true, 
+				title:"Create Course"
+				buttons:{
+					"create":function(){
+						alert("create btn clicked!");
+					},
+					Cancel:function(){
+						$("#create-course-dialog").dialog("close");
+					}	
+				},
+				close:function(){
+					$("#create-course-dialog").dialog("close");
+				}
+			})
+		});
+	</script>
+</head>
+<body>
+	<h2>Welcome to courses page</h2>
+	
+	<div th:if="${!#lists.isEmpty(courses)}">
+		<div th:each="course:${courses}" th:object="${course}">
+			<a th:href="${'editCourse/' + {course.id}}"><span th:text="${course.name}"></span></a>
+		</div>
+		<!-- <a href="editCourse/1">Course #1</a>  -->
+	</div>
+	
+	<div th:unless="${!#lists.isEmpty(courses)}">
+		There are no courses to list
+	</div>
+	
+	<div style="margin-top:1em;">
+		<button>Create Course</button>
+	</div>
+	
+	<div id="create-course-dialog">
+		<form action="" method="post" th:object="${course}">
+			<fieldset>
+				Course Name: <input type="text" th:field="${course.name}"/>
+			</fieldset>
+		</form>
+	</div>
+	
+</body>
+</html>
