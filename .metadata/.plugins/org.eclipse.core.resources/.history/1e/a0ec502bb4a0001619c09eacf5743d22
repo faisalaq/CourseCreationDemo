@@ -1,0 +1,5 @@
+package com.coursecreation.repository;
+
+public interface CourseRepository {
+
+}
